@@ -6,10 +6,10 @@ class Solution:
         for char in s:
             if char.isdigit():
                 number.append(char)
-            elif char == '[':
+            elif char == "[":
                 stack.append("".join(number))
                 number = []
-            elif char == ']':
+            elif char == "]":
                 alphas = []
                 while stack[-1].isalpha():
                     alphas.append(stack.pop())
