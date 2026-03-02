@@ -31,7 +31,7 @@ jobs:
           pytest --cov=./ --cov-report=xml --junitxml=junit_report.xml -v
 
       - name: Upload coverage report
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         if: always()
         with:
           name: coverage-report
