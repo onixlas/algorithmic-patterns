@@ -7,7 +7,7 @@ from test_utils import TreeBuilder
     "root, val, expected",
     [([4, 2, 7, 1, 3], 2, [2, 1, 3]), ([4, 2, 7, 1, 3], 5, [])],
 )
-def test_max_depth(root, expected):
+def test_search_bst(root, val, expected):
     root = TreeBuilder.from_list(root)
     solution = Solution()
-    assert solution.searchBST(root) == expected
+    assert TreeBuilder.to_list(solution.searchBST(root, val)) == expected
