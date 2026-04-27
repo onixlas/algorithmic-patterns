@@ -5,7 +5,7 @@ from src.graphs.reorder_routes_to_make_all_paths_lead_to_the_city_zero.solution 
 
 
 @pytest.mark.parametrize(
-    "n, connecntions, expected",
+    "n, connections, expected",
     [
         (6, [[0, 1], [1, 3], [2, 3], [4, 0], [4, 5]], 3),
         (5, [[1, 0], [1, 2], [3, 2], [3, 4]], 2),
